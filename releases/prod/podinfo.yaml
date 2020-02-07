@@ -19,5 +19,5 @@ spec:
       tag: 1.0.3
     replicaCount: 5
     secrets:
-      - secret1: prod-value1
-      - secret2: prod-value2
+      secret1: prod-value1
+      secret2: prod-value2

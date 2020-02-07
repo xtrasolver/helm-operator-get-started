@@ -21,5 +21,5 @@ spec:
     hpa:
       enabled: false
     secrets:
-      - secret1: dev-value1
-      - secret2: dev-value2
+      secret1: dev-value1
+      secret2: dev-value2
