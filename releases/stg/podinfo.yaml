@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: xtrasolver/podinfo
-      tag: stg-f123456
+      tag: stg-g123456
     replicaCount: 2
     hpa:
       enabled: true
