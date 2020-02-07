@@ -15,8 +15,8 @@ spec:
     ref: master
   values:
     image:
-      repository: xtrasolver/c123456
-      tag: dev-hdtwcel9
+      repository: xtrasolver/podinfo
+      tag: dev-c123456
     replicaCount: 1
     hpa:
       enabled: false
