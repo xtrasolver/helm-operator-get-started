@@ -23,6 +23,6 @@ spec:
       maxReplicas: 10
       cpu: 50
       memory: 256Mi
-    secrets:
+    encriptedSecretStringData:
       secret1: stg-value1
       secret2: stg-value2

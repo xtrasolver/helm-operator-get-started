@@ -1,0 +1,4 @@
+creation_rules:
+  - pgp: 738AFC190115B9CB7E3A36892A2584FA1DA1C1BB
+    encrypted_regex: "^(encriptedSecretStringData)$"
+    path_regex: "^*.enc.yaml$"

@@ -20,6 +20,6 @@ spec:
     replicaCount: 1
     hpa:
       enabled: false
-    secrets:
+    encriptedSecretStringData:
       secret1: dev-value1
       secret2: dev-value2

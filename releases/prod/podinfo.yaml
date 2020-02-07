@@ -18,6 +18,6 @@ spec:
       repository: xtrasolver/podinfo
       tag: 1.0.3
     replicaCount: 5
-    secrets:
+    encriptedSecretStringData:
       secret1: prod-value1
       secret2: prod-value2

@@ -1,0 +1,35 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+    name: podinfo-prod
+    namespace: prod
+    annotations: null
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: semver:~1.0
+spec:
+    releaseName: podinfo-prod
+    chart: null
+    git: git@github.com:xtrasolver/helm-operator-get-started
+    path: charts/podinfo
+    ref: master
+    values:
+        image:
+            repository: xtrasolver/podinfo
+            tag: 1.0.3
+        replicaCount: 5
+        encriptedSecretStringData:
+            secret1: ENC[AES256_GCM,data:2wlototMhCF8PyY=,iv:+GAI86q6CXxfGJm1tL8xwiFWS+SuDC8tqptqe8QBmF4=,tag:si+xri1fj0Ey0+tOTdz+qw==,type:str]
+            secret2: ENC[AES256_GCM,data:mDsC9l+wsQrNGpk=,iv:h1wprDtdq7vcehgsgpFRUaPPtsm2CnDR2UmTg7oNf8E=,tag:YpLXsuxuzMjSeJkpyhaXUw==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    lastmodified: '2020-02-07T23:37:04Z'
+    mac: ENC[AES256_GCM,data:fg1aYLp4+SETzbaTiZFE+QPSBTmxHkO7KqqlkOUkgbVM8pe+dLq0tNw8j5kjrb3WjX1JggIHikYXVt4DvDnsBZzqu7T5Qs8+2YsW2yTsTyq1sMfP0QB5ZrvkZUrYC4czkSyZakiLI/Z0k7R+MAzsExUgrOfY8n9ejA1ZZ/YrPfk=,iv:tEYkzkx0tO4GTD5H2E7f0/3cMtUHvv9GewzLTxPUP4M=,tag:9Nr6JNP+ax/XwqcxlwKycg==,type:str]
+    pgp:
+    -   created_at: '2020-02-07T23:36:08Z'
+        enc: "-----BEGIN PGP MESSAGE-----\r\n\r\nhQIMAzPliKfb/lBuAQ/9GOiAGwpjZR/dL66dlR0yT5Ebgi/xXSsUz+HrY8kVZWQU\r\nqyELegBugv5Xa7Kh6IRoi6B2YstBqoMi5QAJF3I5gKCcv9GK2iXN7wpJiLy0ezqp\r\n0+W2NHh5PWYnCBfcochsDP6Nuu3bgzcRzcXy4dEdqBcCDpEuUAltAqlGO8c9KRF9\r\n6XXuWwYCLXRWz5CMqcVQKJPsHo1QjYPHB7q1KW5Q70HMJQFmRK8z6FF6RUrlirhG\r\nTW74tLoj4LBiz3NA/knZosvKWk3nkGrgOr2bK8fG+JO1EbfgeES+UQoZ8TxA/h0K\r\naXTNRzsIyZ12kueN63qT96dpmPNffH1vZ/Cc2VTFw/DJ8AXUg07d59DGe31Jgdxy\r\n03q2EX/YNBQvLg4g6fzOs+SJjUPcXZK3vjB3mGVm69MPT1yz8NzxUMYgiJhJVsqq\r\nsaJUHjnZOefN0me+s6X7kiC9xauz3g69z9gN5XA4xxnVYd1u8UzaUQ2E9Zq2nhKR\r\nkkrbho1JFo+hfvY2OiQAsAc4bnonZo7QP60VNAnTgdxYwgPfLQgEHnC7wsR6/uVI\r\n8ZR8tBwVhvn7cBNuZvE+mzruJZi77A2goKKm/POrWytzmMX5bJqbdSWEu79/nEMQ\r\nrxHpjBo/wytgb1zJrEKNvj+nSfJMyDe03/wI/yR+H/G/DT4L2oGqZb3I7nWFxKDS\r\nXgFFFF2NHAORHmBQPve4f2cClmr+nQyR12QWjKEI+ul7N0GjIckYEGU1TXt+rBfR\r\nLQca5fQ2eEcTFFX86IzPKvfMac+/+oo2BWEWVqY/VltqBSnhq6u4Y/z1wJdSrNA=\r\n=DiDb\r\n-----END
+            PGP MESSAGE-----\r\n"
+        fp: 738AFC190115B9CB7E3A36892A2584FA1DA1C1BB
+    encrypted_regex: ^(encriptedSecretStringData)$
+    version: 3.5.0
