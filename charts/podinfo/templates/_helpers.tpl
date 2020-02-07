@@ -41,3 +41,10 @@ Create the name of the service account to use
     {{ default "default" .Values.serviceAccount.name }}
 {{- end -}}
 {{- end -}}
+
+{{/*
+Create the name of the SecretName secret
+*/}}
+{{- define "podinfo.SecretName" -}}
+    {{- printf "sec-%s" (include "podinfo.fullname" .) | trunc 63 | trimSuffix "-" -}}
+{{- end -}}

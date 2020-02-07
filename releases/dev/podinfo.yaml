@@ -20,3 +20,6 @@ spec:
     replicaCount: 1
     hpa:
       enabled: false
+    secrets:
+      - secret1: dev-value1
+      - secret2: dev-value2
