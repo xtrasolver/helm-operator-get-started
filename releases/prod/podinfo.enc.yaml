@@ -21,7 +21,7 @@ spec:
       secret1: ENC[AES256_GCM,data:2wlototMhCF8PyY=,iv:+GAI86q6CXxfGJm1tL8xwiFWS+SuDC8tqptqe8QBmF4=,tag:si+xri1fj0Ey0+tOTdz+qw==,type:str]
       secret2: ENC[AES256_GCM,data:mDsC9l+wsQrNGpk=,iv:h1wprDtdq7vcehgsgpFRUaPPtsm2CnDR2UmTg7oNf8E=,tag:YpLXsuxuzMjSeJkpyhaXUw==,type:str]
 sops:
-  kms: []
+  kms: []   
   gcp_kms: []
   azure_kv: []
   lastmodified: '2020-02-07T23:37:04Z'
