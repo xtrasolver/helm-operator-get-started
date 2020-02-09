@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: xtrasolver/podinfo
-      tag: dev-g123456
+      tag: dev-i123456
     replicaCount: 1
     hpa:
       enabled: false
