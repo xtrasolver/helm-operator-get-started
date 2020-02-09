@@ -7,7 +7,7 @@ metadata:
         fluxcd.io/automated: "true"
         filter.fluxcd.io/chart-image: semver:~1.0
 spec:
-    releaseName: podinfo-prod
+    releaseName: podinfo-prod-sec
     chart:
         git: git@github.com:xtrasolver/helm-operator-get-started
         path: charts/podinfo
@@ -24,8 +24,8 @@ sops:
     kms: []
     gcp_kms: []
     azure_kv: []
-    lastmodified: '2020-02-09T12:50:24Z'
-    mac: ENC[AES256_GCM,data:uwCKrAxTIQWtgk/kdT719vzQS6ZrPSjxngyrtkNydDk6xOwFAGBv+XjYm5kqudmq+TykTR05YTxwlqcfPKCjYDCW6ULJejwsxeE0d7iFFTqYfU82emMxZFVqP5bodOQVbcS/8WdxB0MHWVsltI3EDN4gy06HhVNKA4w7XRh9wFk=,iv:sSBKiwqyjp0PCsjKzwwj4jXtbPNOsUIrE/lUjgIoLOY=,tag:3fC8yGNn14CzUWdDl9vr/g==,type:str]
+    lastmodified: '2020-02-09T12:55:46Z'
+    mac: ENC[AES256_GCM,data:uVL9Znw/Lgo0J3oVWB1cxDU7ptRLAHjQK/lUjXmtmO7dKFG4OCb/ogdkGicd53MjF3U/OmH06y/po4LZl/LmHff30yuysa/pA41jTgA4CBHBsdHfBN0SIIQV5BQJtFGP6j/wT+eqO3ARzHKQnsr1W4/nUl+jLGpFvBWztIbrblc=,iv:kwsohL9mwdtm7iKnNw/tR5Uktpz1X+Uh7TCJGha31U8=,tag:haSYN4wm2Or17fQFbYmSbg==,type:str]
     pgp:
     -   created_at: '2020-02-09T12:47:19Z'
         enc: "-----BEGIN PGP MESSAGE-----\r\n\r\nhQIMAzPliKfb/lBuAQ//e7w25wDafQX6DXLK7Yi4BpEfGU2CIJcwQNMVJWkd1YSo\r\nQ/HCZAFBnHUa4oYtSC1ynIMpGt5w/pc07EbbYNnSkO83NbELvkCDfbl+Rbp3/PDH\r\nEhsapUx038iwzWBBRYljeCGGJn3WoSt91XhLO8cEJ142ogq5OPUoYZImlE0bFH/+\r\np6EpPwAC1h56tCx1d+dilyzWRMwng/oRkfJNkdq3VTEF9sPI14s12j+2dOG30Csh\r\nAIqHaJ5LDfluj+dTYuXyoqGamjANtqMsGkJxmotfVU6QEu5e5sRz7lSYQ2b8u3Q9\r\nayC5T2N4ia9bP6P6tNZ9EiIoXP8RTJ7+1nC6pNYV8+r9Wqb1gKXhpF17Blcfi2IN\r\nDJY4sUdZ3X0PBoTF4o7a1dHcgakJjmCndhD7FQunpXvsw84rNMs0nrhaVFBsMkh4\r\njuCKAXZuqMhiF2WAIpYmO4On4ecLhKXF64+ua87bRxa5LXYQW2cApj1Us94xqZQO\r\nMxP1iiiK3FRhVaNOEFzjpjlh664j/SJ1Lwp1O5v0e5uhl8PKasgDaXlGp+LBqp7e\r\nCfeUZVSbHY5806QB82hSdG9qnmLa0bUqCBt6SEXpSXfbEZIrKFCuUTfQLZ/MXpx1\r\n/9fxQ5vZ1dW2GIRQ2NSPn1BG7lhtcyAcBvX8l0pE2Xok1uH+PrLRz+3MwLAqbH7S\r\nXgGM75DHJsjchzE40tJV6Pqp1DQzMWHQM8uaKdjySc4UJT+l5vtskgrgTrJw2dnK\r\nXg6epyYWYj82tCrgoxwShtFAkUEc1R7nKZsyB5uh86VwZYy8ZWS0i+Z5KoxKm20=\r\n=Gq3C\r\n-----END
